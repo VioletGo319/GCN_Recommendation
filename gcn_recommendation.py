@@ -1,5 +1,5 @@
 import pandas as pd 
-
+import numpy as np
 
 
 
@@ -19,6 +19,9 @@ if __name__ == "__main__":
     item_list = pd.read_csv('https://raw.githubusercontent.com/kuandeng/LightGCN/master/Data/amazon-book/item_list.txt', sep=r"\s+", engine="python",
                         dtype={"org_id": str, "remap_id": int})
     item_list.rename(columns = {"org_id":"item_id"}, inplace = True)
+
+
+
 
 
 
